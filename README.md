@@ -34,19 +34,35 @@ The API will be available at http://localhost:5000.
 **API Endpoints**
 
 Clothes
+
 POST /clothes - Add a new clothing item.
+
 GET /clothes - Retrieve all clothing items.
+
 GET /clothes?query=<value> - Retrieve a specific clothing item by specific field.
+
 DELETE /clothes?query=<value> - Delete a specific clothing item by specific field.
+
 Outfits
+
 POST /outfits - Add a new outfit.
+
 GET /outfits - Retrieve all outfits that match the current weather according to OpenWeatherMap and computer IP.
+
 GET /outfits?query=<value> - Retrieve a specific outfit by specific field.
+
 DELETE /outfits?query=<value> - Delete a specific outfit by specific field.
+
 Ratings
+
 GET /ratings - Retrieve all ratings for outfits.
+
 GET /ratings?id=<id> - Retrieve ratings for a specific outfit by ID.
+
 POST /ratings?id=<id> - Add a rating for a specific outfit.
+
 DELETE /ratings?id=<id> - Delete ratings for a specific outfit by ID.
+
 Top Outfits
+
 GET /top - Retrieve the top-rated outfits.
