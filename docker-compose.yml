@@ -1,0 +1,21 @@
+version: '1'
+
+services:
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+
+  closet:
+    build: ./closet
+    restart: always
+    volumes:
+      - type: bind
+        source: ./closet
+        target: /app
+    ports:
+      - "5000:5000"
+    expose:
+      - 80
+    depends_on:
+      - "mongo"
